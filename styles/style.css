@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: rgb(245, 248, 255);
+}
+
 /* shared style */
 .container {
     max-width: 1140px;
@@ -108,7 +112,8 @@
     gap: 10px;
 
 }
-.card-container img{
+
+.card-container img {
     width: 100%;
 }
 
@@ -143,41 +148,62 @@
 
 /* Flower Lover Container */
 
+
 .flower-lover-container {
-  gap: 60px;
-  margin-top: 100px;
+    gap: 60px;
+    margin-top: 150px;
 }
 
 .flower-lover-container-img {
-  flex: 1;
+    flex: 1;
 }
 
 .flower-lover-container-img img {
-  width: 100%;
-  height: 100%;
-  display: block;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .flower-lover-container-content {
-  flex: 1;
-  margin-top: 30px;
+    flex: 1;
+    margin-top: 30px;
 }
 
 .flower-lover-container-content h2 {
-  font-size: 3.1rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: rgb(0, 0, 0);
-}
-.flower-lover-container-content ul{
-    padding-left: 20px;
-}
-.flower-lover-container-content ul li {
-  font-size: 1.7rem;
-  color: rgba(0, 0, 0, 0.5);
-  margin: 20px auto;
+    font-size: 3.1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
 }
 
+.flower-lover-container-content ul {
+    padding-left: 20px;
+}
+
+.flower-lover-container-content ul li {
+    font-size: 1.7rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+}
+
+.flower-lover-container-img {
+    position: relative;
+}
+
+.trusted-badge{
+    max-width: 286px;
+    max-height: 286px;
+}
+.trusted-badge {
+
+    position: absolute;
+    top: -150px;
+    left: 350px;
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
 
 
 
@@ -226,12 +252,23 @@
         grid-template-columns: repeat(2, 1fr);
         padding: 20px;
     }
-    .flower-lover-container{
+
+    .flower-lover-container {
         flex-direction: column;
-        margin-top: 30px;
+        margin-top: 20px;
         padding: 20px;
     }
-    .flower-lover-container-content{
+
+    .flower-lover-container-content {
         margin: 5px;
+    }
+
+    .flower-lover-container-img {
+        position: none;
+    }
+
+    .flower-lover-container-img .trusted-badge {
+        display: none;
+        position: none;
     }
 }
