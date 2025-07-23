@@ -1,117 +1,139 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* shared style */
-.container{
+.container {
     max-width: 1140px;
     margin: 20px auto;
 }
-.display-flex{
+
+.display-flex {
     display: flex;
 }
 
 /* Nav bar */
-.navbar{
+.navbar {
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-items ul{
+.nav-items ul {
     list-style: none;
     gap: 48px;
 }
-.nav-items ul li a{
+
+.nav-items ul li a {
     text-decoration: none;
 }
-#id-1{
+
+#id-1 {
     color: rgb(137, 135, 161);
 }
-#home{
+
+#home {
     color: rgb(37, 36, 50);
     font-weight: 700;
 }
-.cart{
+
+.cart {
     gap: 10px;
 }
 
 /* banner section */
-.banner-container{
+.banner-container {
     margin-top: 120px;
 }
-.banner-left{
+
+.banner-left {
     max-width: 50%;
     margin-top: 130px;
 }
-.banner-left h1{
+
+.banner-left h1 {
     font-weight: 700;
     font-size: 4rem;
 }
-#color{
+
+#color {
     color: rgb(233, 90, 8);
 }
-.banner-left p{
+
+.banner-left p {
     margin-top: 10px;
     font-size: 1.4rem;
     color: rgba(0, 0, 0, 0.5);
 }
-.banner-right{
+
+.banner-right {
     width: 50%;
 }
-.banner-right img{
+
+.banner-right img {
     width: 100%;
     height: 100%;
     display: block;
 }
 
 /* main section */
-.main-section{
+.main-section {
     margin-top: 100px;
 }
-.main-content{
+
+.main-content {
     text-align: center;
 }
-.main-content h2{
+
+.main-content h2 {
     font-weight: 700;
     font-size: 3rem;
 }
-.main-content p{
+
+.main-content p {
     padding: 0 126px;
     color: rgba(0, 0, 0, 0.5);
     font-size: 1.4rem;
 }
-#our{
+
+#our {
     color: rgb(233, 90, 8);
 }
 
-.card-container{
+.card-container {
     margin-top: 50px;
     height: 484px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    max-width: 270px;
+
 }
-.card-content{
+.card-container img{
+    width: 100%;
+}
+
+.card-content {
     max-width: 270px;
     text-align: center;
 }
-.card-content .card-title{
+
+.card-content .card-title {
     margin: 10px auto;
     color: rgb(17, 17, 17);
     font-size: 1.4rem;
     font-weight: 500;
     text-align: center;
 }
-#price{
+
+#price {
     color: rgb(17, 17, 17);
     font-weight: 700;
     font-size: 1.4rem;
     margin-top: 10px;
 }
-.button{
+
+.button {
     background-color: rgb(233, 90, 8);
     color: white;
     width: 100%;
@@ -123,28 +145,48 @@
 
 
 @media screen and (max-width: 576px) {
-    .navbar{
+    .navbar {
         margin: 10px 15px;
     }
-    .navbar ul li{
+
+    .navbar ul li {
         display: none;
     }
-   .banner-container{
-    flex-direction: column-reverse;
-   }
-   .banner-right{
-    width: 100%;
-   }
-   .banner-right img{
-    width: 100%;
-   }
-   .banner-left{
-    max-width: 100%;
-    margin-top: 20px;
-    padding: 10px;
-   }
-   .banner-left h1{
-    max-width: 365px;
-    font-size: 2rem;
-   }
+
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .banner-right {
+        width: 100%;
+    }
+
+    .banner-right img {
+        width: 100%;
+    }
+
+    .banner-left {
+        max-width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .banner-left h1 {
+        max-width: 365px;
+        font-size: 2rem;
+    }
+
+    .main-section {
+        margin-top: 50px;
+    }
+
+    .main-content p {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
 }
