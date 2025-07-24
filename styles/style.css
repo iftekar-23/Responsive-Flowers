@@ -228,12 +228,11 @@ body {
     color: rgba(0, 0, 0, 0.5);
 }
 
-/*  */
+/* latest deal */
 .latest-deal-img {
     display: flex;
     gap: 20px;
 }
-
 
 .latest-deal-img-1 {
     background-image: url(../assets/deal-bloom.png);
@@ -339,6 +338,56 @@ body {
     text-align: center;
     text-decoration-line: underline;
 }
+
+
+/* colorful bunch */
+.colorful-bunch {
+  background-image: url(../assets/news-letter-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  height: 533px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.colorful-bunch h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  width: 700px;
+  max-width: 90%;
+  background: white;
+  border-radius: 4px;
+}
+
+.newsletter-form input[type="email"] {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  outline: none;
+}
+
+.newsletter-form button {
+  padding: 15px 30px;
+  background-color: #f96302; /* Orange */
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+
 
 @media screen and (max-width: 576px) {
     .navbar {
@@ -451,5 +500,11 @@ body {
         font-size: 1rem;
         text-align: center;
         text-decoration-line: underline;
+    }
+    .newsletter-form{
+        width: 450px;
+    }
+    .newsletter-form input[type="email"] {
+        padding: 25px;
     }
 }
